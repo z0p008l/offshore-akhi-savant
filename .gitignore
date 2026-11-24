@@ -1,0 +1,35 @@
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+*.p12
+credentials.json
+service-account*.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local Code Puppy files
+.code_puppy/
+
+# Local Windows files
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+
+# Raw or potentially sensitive data
+*.csv
+*.xlsx
+*.xls
+*.parquet
+data/
+exports/
+reports/
+current_report.json
+freshness.json
