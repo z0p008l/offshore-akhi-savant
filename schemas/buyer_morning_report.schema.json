@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Buyer Morning Report",
+  "type": "object",
+  "required": [
+    "meta"
+  ],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": [
+        "source_run_date",
+        "fetched_at_utc"
+      ],
+      "properties": {
+        "source_run_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "fetched_at_utc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "source_tables": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
